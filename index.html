@@ -1,0 +1,229 @@
+<!DOCTYPE html>>
+<html>
+    <head>
+        <title>OST's Hall of Fame</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>
+            <h1>
+                OST's Hall of Fame 
+            </h1>
+        </div>
+        <div class="Candidate">
+            <div>
+                <img src="images/holyblade.jpg" alt="ludwig_thb" class="Oview">
+            </div>
+            <div class="Sample">
+                <h2 class="Oname">Ludwig The Holy Blade</h2>
+                <button class="Oaudio" id="bt1" onclick="Stop_Play1()">Play/Pause</button>
+                <audio src="audios/Bloodborne OST - Ludwig, the Holy Blade.mp3" id="ludwig" ></audio>
+                <script>document.getElementById("ludwig").volume = 0.2</script>
+            </div>
+        </div>
+        <div>
+            <div class="Candidate">
+                <div>
+                    <img src="images/Persona_3_Reload.jpg" alt="P3" class="Eview">
+                </div>
+                <div class="Sample">
+                    <h2 class="Ename">It's Going Down Now</h2>
+                    <button class="Eaudio" id="bt2" onclick="Stop_Play2()">Play/Pause</button>
+                    <audio src="audios/It's Going Down Now.mp3" class="Eaudio" id="persona"></audio>
+                    <script>document.getElementById("persona").volume = 0.1</script>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="Candidate">
+                <div>
+                    <img src="images/bravely.jpg" alt="vagrant" id="vagrant" class="Oview">
+                </div>
+                <div class="Sample">
+                    <h2 class="Oname">The Vagrant Of Love</h2>
+                    <button class="Oaudio" id="bt3" onclick="Stop_Play3()">Play/Pause</button>
+                    <audio src="audios/Bravely Default OST_ Bonus 4 Love's Vagrant.mp3" id="ring"></audio>
+                    <script>document.getElementById("ring").volume = 0.2</script>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="Candidate">
+                <div>
+                    <img src="images/three.jpg" alt="house" class="Eview" id="houses">
+                </div>
+                <div class="Sample">
+                    <h2 class="Ename">God Shattering Star</h2>
+                    <button class="Eaudio" id="bt4" onclick="Stop_Play4()">Play/Pause</button>
+                    <audio src="audios/FE Three Houses OST - 20. God Shattering Star (Rain).mp3" class="Eaudio" id="nemesis"></audio>
+                    <script>document.getElementById("nemesis").volume = 0.2</script>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="Candidate">
+                <div>
+                    <img src="images/OT2.jpg" alt="final" id="final" class="Oview">
+                </div>
+                <div class="Sample">
+                    <h2 class="Oname" id="long">Those Who Deny The Dawn</h2>
+                    <button class="Oaudio" id="bt5" onclick="Stop_Play5()">Play/Pause</button>
+                    <audio src="audios/Octopath Traveler 2 - Those Who Deny the Dawn.mp3" id="dawn"></audio>
+                    <script>document.getElementById("dawn").volume = 0.2</script>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="Candidate">
+                <div>
+                    <img src="images/doom.jpg" alt="eternal" id="eternal" class="Eview">
+                </div>
+                <div class="Sample">
+                    <h2 class="Ename" id="Fear">The Only Thing They Fear Is You</h2>
+                    <button class="Eaudio" id="bt6" onclick="Stop_Play6()">Play/Pause</button>
+                    <audio src="audios/Doom Eternal OST - The Only Thing They Fear Is You (Mick Gordon) [Doom Eternal Theme].mp3" class="Eaudio" id="You"></audio>
+                    <script>document.getElementById("You").volume = 0.1</script>
+                </div>
+            </div>
+        </div>
+        <script>
+            var song1 = document.getElementById("ludwig");
+            var song2 = document.getElementById("persona");
+            var song3 = document.getElementById("ring");
+            var song4 = document.getElementById("nemesis");
+            var song5 = document.getElementById("dawn");
+            var song6 = document.getElementById("You");
+
+            var btn1 = document.getElementById("bt1");
+            var btn2 = document.getElementById("bt2");
+            var btn3 = document.getElementById("bt3");
+            var btn4 = document.getElementById("bt4");
+            var btn5 = document.getElementById("bt5");
+            var btn6 = document.getElementById("bt6");
+
+            var count1 = 0;
+            var count2 = 0;
+            var count3 = 0;
+            var count4 = 0;
+            var count5 = 0;
+            var count6 = 0;
+
+            function Stop_Play1(){
+
+                if (count1 == 0) {
+                    count1 = 1;
+                    song1.play();
+                    song2.pause();
+                    song3.pause();
+                    song4.pause();
+                    song5.pause();
+                    song6.pause();
+
+                }
+                else{
+                    count1 = 0;
+                    song1.pause();
+                    song1.currentTime = 0;
+                }
+            }
+
+            function Stop_Play2(){
+
+                if (count2 == 0) {
+                    count2 = 1;
+                    song2.play();
+                    song1.pause();
+                    song3.pause();
+                    song4.pause();
+                    song5.pause();
+                    song6.pause();
+
+                }
+                else{
+                    count2 = 0;
+                    song2.pause();
+                    song2.currentTime = 0;
+                }
+            }
+
+            function Stop_Play3(){
+
+                if (count3 == 0) {
+                    count3 = 1;
+                    song3.play();
+                    song2.pause();
+                    song1.pause();
+                    song4.pause();
+                    song5.pause();
+                    song6.pause();
+
+                }
+                else{
+                    count3 = 0;
+                    song3.pause();
+                    song3.currentTime = 0;
+                }
+            }
+
+            function Stop_Play4(){
+
+                if (count4 == 0) {
+                    count4 = 1;
+                    song4.play();
+                    song2.pause();
+                    song3.pause();
+                    song1.pause();
+                    song5.pause();
+                    song6.pause();
+
+                }
+                else{
+                    count4 = 0;
+                    song4.pause();
+                    song4.currentTime = 0;
+                }
+            }
+
+            function Stop_Play5(){
+
+                if (count5 == 0) {
+                    count5 = 1;
+                    song5.play();
+                    song2.pause();
+                    song3.pause();
+                    song4.pause();
+                    song1.pause();
+                    song6.pause();
+
+                }
+                else{
+                    count5 = 0;
+                    song5.pause();
+                    song5.currentTime = 0;
+                }
+            }
+
+            function Stop_Play6(){
+
+                if (count6 == 0) {
+                    count6 = 1;
+                    song6.play();
+                    song2.pause();
+                    song3.pause();
+                    song4.pause();
+                    song5.pause();
+                    song1.pause();
+
+                }
+                else{
+                    count6 = 0;
+                    song6.pause();
+                    song6.currentTime = 0;
+                }
+            }
+
+        </script>
+    </body>
+</html>

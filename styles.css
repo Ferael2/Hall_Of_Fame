@@ -1,0 +1,194 @@
+body{
+    background-image:url(images/hero-hall-of-fame.jpeg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+    border: 5px beige solid;
+    border-style: ridge;
+}
+
+h1{
+    /*Size Settings*/
+    width: 60%;
+    height: 10%;
+    font-size: 5rem;
+
+    /*Appearance Settings*/
+    color: rgb(254, 255, 255);
+    font-weight:bolder;
+    font-style: italic;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-shadow: 10px 10px 5px grey;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(255, 209, 2);
+
+    /*Position Settings*/
+    position: relative;
+    top: -10vh;
+    right: 50vw;
+    left: 20.5vw;
+
+}
+
+.Oview{
+
+    /*Size Settings*/
+    width: 30%;
+
+    /*Appearance Settings*/
+    border: 10px rgb(240, 186, 9) solid;
+    border-style: ridge;
+    
+    position: relative;
+    left: 20vw;
+    margin-top: 20vh;
+}
+
+.Oname{
+    width: 142%;
+
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(255, 209, 2);
+    text-shadow: 10px 10px 5px grey;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: black;
+    background: rgba(0,0,0,0.7);
+    
+    position: relative;
+    right: 20vw;
+    top: 20vh;
+    transform: skewX(15deg);
+}
+
+.Oaudio{
+    background-color: gold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    border: 5px, white, solid;
+    border-style: ridge;
+
+
+    width: 40%;
+    height: 8%;
+
+    position: relative;
+    left: -5vw;
+    top: 3vh;
+}
+
+.Eview{
+    /*Size Settings*/
+    width: 90%;
+
+    /*Appearance Settings*/
+    border: 10px rgb(240, 186, 9) solid;
+    border-style: ridge;
+    
+    position: relative;
+    left: 46vw;
+    margin-top: 20vh;
+}
+
+.Ename{
+    width: 140%;
+
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(255, 209, 2);
+    text-shadow: 10px 10px 5px grey;
+    background-color: black;
+    background: rgba(0,0,0,0.7);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    
+    position: relative;
+    right: 42vw;
+    top: 17vh;
+    transform: skewX(165deg);
+}
+
+.Eaudio{
+    
+    background-color: gold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    border: 5px, white, solid;
+    border-style: ridge;
+
+
+    width: 40%;
+    height: 8%;
+    
+    position: relative;
+    right: 23vw;
+}
+
+.Candidate{
+    
+    width: 100%;
+    display: flex;
+
+    justify-content: space-evenly;
+    background-color: black;
+    background: rgba(0,0,0,0.6);
+}
+
+.Sample{
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#houses{
+    width: 100%;
+}
+
+#final{
+    margin-right: 55vw;
+}
+
+
+#Fear{
+    width: 70%;
+    position: relative;
+    right: 22vw;
+}
+
+#eternal{
+    width: 100%;
+    position: relative;
+    left: 52vw;
+}
+
+#bt6{
+    
+    width: 20%;
+
+    position: relative;
+    right: 8vw;
+}
+
+#bt4{
+    width: 30%;
+}
+
+#bt2{
+    width: 30%;
+}
+
+#bt5{
+
+    position: relative;
+    left: -3vw;
+}
+
+button:active{
+    background-color: gray;
+}
